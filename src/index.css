@@ -1,0 +1,113 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+header {
+    padding: 2rem;
+    background-color: #333333;
+}
+
+header a {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+header a:hover {
+    color: gray;
+}
+
+.createQuestion {
+    flex-basis: 300px;
+}
+
+.createQuestionForm {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.createQuestionForm button {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.correctAnswer {
+    color: red;
+}
+
+.createQuestionForm input,
+.createQuestionForm select {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 3.5rem;
+}
+
+.quizzContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quizzAnswers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 500px;
+}
+
+h3 button {
+    margin-right: 0.5rem;
+}
+
+.quizzContainer button {
+    background-color: #303030;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    color: white;
+}
+
+.quizzContainer button:hover {
+    background-color: #555555;
+    cursor: pointer;
+}
+
+.adminPage {
+    display: flex;
+    gap: 5rem;
+}
+
+.questionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    flex-grow: 1;
+    word-wrap: break-word;
+    gap: 2rem;
+}
+.questionsGrid div {
+    background-color: #333333;
+    padding: 1rem;
+}
